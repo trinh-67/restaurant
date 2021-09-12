@@ -1,0 +1,54 @@
+.coming-content .contact-date{
+    font-size: 12px;
+    color: #c19d60;
+}
+.coming-content .contact-time{
+    font-size: 20px;
+    margin: 0;
+}
+.contact-working-time{
+    position: relative;
+}
+.contact-working-time:before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -5px;
+    width: 10px;
+    height: 100px;
+    background: url(http://restabook.kwst.net/dark/images/ver-separator.png) repeat-y;
+}
+.contact-number{
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid #c19d60;
+    padding: 5px;
+}
+.contact-number a{
+    color:#FFF;
+    transition: 0.5s ease-in-out;
+}
+.contact-number a:hover{
+    color: #c19d60;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+   
+}
+@media only screen and (max-width: 992px) {
+  
+}
+@media only screen and (max-width: 768px) {
+  
+}
+@media only screen and (max-width: 600px) {
+   
+}
+@media only screen and (max-width: 400px) {
+    
+
+}
+

@@ -1,0 +1,97 @@
+.counting{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -20px -60px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.counting-content{
+    z-index: 2;
+}
+.num {
+    color: #C19D60;
+    font-size: 40px;
+    font-weight: bold;
+}
+.counting-title{
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+}
+.counting-title:after{
+    position: absolute;
+    content: '\25CF\25CF\25CF';
+    width: 50px;
+    left: 50%;
+    bottom: -20px;
+    margin-left: -25px;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #C19D60;
+}
+.counting-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    z-index: 1;
+}
+@media only screen and (min-width: 1200px) {
+    
+}
+@media only screen and (max-width: 1200px) {
+   
+}
+@media only screen and (max-width: 992px) {
+    .counting{
+        height:350px;
+    }
+    .num{
+        font-size: 24px;
+    }
+    .counting-title{
+        font-size: 12px;
+        height:30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .counting{
+        height:300px;
+    }
+    .num{
+        font-size: 24px;
+    }
+    .counting-title{
+        font-size: 10px;
+        height:30px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .num{
+        font-size: 20px;
+    }
+    .counting-title{
+        font-size: 8px;
+        height:25px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .counting {
+        height: 250px;    
+    }
+    .num{
+        font-size: 12px;
+    }
+    .counting-title{
+        font-size: 6px;
+        height:20px;
+    }
+}

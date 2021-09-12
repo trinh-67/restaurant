@@ -1,0 +1,328 @@
+.menu-title{
+    color: #fff;
+    font-weight: bold;
+    text-align:center;
+    margin-bottom: 30px;
+}
+.gallery-filters {
+    border: 1px solid rgb(136, 128, 128,0.4);
+    margin-bottom: 60px;
+    padding: 20px;
+    background: #f9f9f9;
+    position: relative;
+    max-width: 60%;
+    margin: auto;
+    background: #303030;
+}
+.gallery-filters:before, .gallery-filters:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 120px;
+    height: 1px;
+    border-top: 1px dotted #C19D60;
+}
+.gallery-filters:before {
+    left: -20%;
+}
+.gallery-filters::after {
+    right: -20%;
+}
+.btn-gallery-filter{
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    transition: 0.3s ease-in;
+}
+.btn-gallery-filter.active,
+.btn-gallery-filter.active:before{
+    opacity: 1;
+    color: #C19D60;
+}
+.btn-gallery-filter span{
+    font-size: 10px;
+    margin-right: 2px;
+}
+.btn-gallery-filter:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 50px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #C19D60;
+    opacity: 0;
+}
+.btn-gallery-filter:hover,
+.btn-gallery-filter:hover:before
+{
+    opacity: 1;
+    color: #C19D60;
+}
+
+/* Food List  */
+.foodlist-card{
+    border: none;
+}
+.card-img-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  .card-img-wrap img {
+    transition: .5s ease-in;
+    width: 100%;
+    height: 280px;
+  }
+  .card-img-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: .25s ease-in;
+  }
+  
+  .card-img-wrap:hover img {
+    transform: scale(1.2);
+  }
+  .card-img-wrap:hover:after {
+    opacity: 1;
+  }
+.foodlist-card .card-body{
+    background: #303030;
+    border: 1px solid #eee;
+    border-color: rgba(255,255,255,0.08);
+}
+.foodlist-card .card-body h3{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+}
+.foodlist-card .card-body h3 span {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    color: #C19D60;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+.foodlist-card .card-body p {
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.foodlist-price{
+    display: flex;
+    justify-content: space-between;
+}
+.foodlist-price span{
+    color: #C19D60;
+    font-size: 22px;
+}
+.foodlist-price .btn-add-cart{
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    background: #C19D60;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+.foodlist-price .btn-add-cart:hover{
+    color: #212121;
+}
+.bold-separator.bold-separator_dark{
+    margin: 30px auto;
+}
+.bold-separator {
+    position: relative;
+    max-width: 400px;
+}
+.bold-separator span {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 100%;
+}
+.bold-separator:before, .bold-separator:after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background: #C19D60;
+    top: 50%;
+    opacity: 1;
+}
+.bold-separator:before{
+    left: 0;
+}
+.bold-separator:after{
+    right: 0;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+    /* .bg-brush-top{
+        top: -9%;
+    } */
+    .foodlist-card .card-body h3{
+        font-size: 16px;
+    }
+    .foodlist-card .card-body h3 span{
+        font-size: 12px;
+        line-height: 5px;
+    }
+    .foodlist-card .card-body p{
+        font-size: 16px;
+    }
+    .gallery-filters:before {
+        left: -25%;
+        width: 100px;
+    }
+    .gallery-filters::after {
+        right: -25%;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* .bg-brush-top{
+        top: -5%;
+    } */
+    .btn-gallery-filter{
+        font-size: 14px;
+    }
+    .gallery-filters:before {
+        left: -25%;
+        width: 100px;
+    }
+    .gallery-filters::after {
+        right: -25%;
+        width: 100px;
+    }
+    .foodlist-card .card-body h3{
+        font-size: 14px;
+    }
+    .foodlist-card .card-body h3 span{
+        font-size: 10px;
+        line-height: 5px;
+    }
+    .foodlist-card .card-body p{
+        font-size: 12px;
+    }
+    .foodlist-price span{
+        font-size:18px;
+        line-height:30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .btn-gallery-filter{
+        font-size: 12px;
+    }
+    .btn-gallery-filter:before{
+        bottom:-15%
+    }
+    .foodlist-card .card-body p{
+        font-size:10px;
+    }
+    .foodlist-price span{
+        font-size:16px;
+    }
+    .gallery-filters:before {
+        left: -25%;
+        width: 70px;
+    }
+    .gallery-filters:after {
+        right: -25%;
+        width: 70px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    /* Filter button  */
+    .btn-gallery-filter{
+        font-size: 10px;
+    }
+    .btn-gallery-filter:before{
+        bottom: 40%;
+        left: -10%;
+        transform: rotate(
+        90deg
+        );
+    }
+    /* Card Item  */
+    .foodlist-card .card-body h3{
+        font-size: 12px;
+    }
+    .foodlist-card .card-body h3 span{
+        font-size: 12px;
+    }
+    .foodlist-price span{
+        font-size:14px;
+        line-height:25px;
+    }
+    .foodlist-price .btn-add-cart{
+        font-size:12px;
+        padding:3px 8px;
+    }
+    .card-img-wrap img{
+        height:200px;
+    }
+    .gallery-filters:before {
+        left: -30%;
+        width: 50px;
+    }
+    .gallery-filters:after {
+        right: -30%;
+        width: 50px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    /* Filter button  */
+    .btn-gallery-filter{
+        font-size: 8px;
+    }
+    .gallery-filters:before {
+        left: -40%;
+        width: 40px;
+    }
+    .gallery-filters:after {
+        right: -40%;
+        width: 40px;
+    }
+    
+    /* Card Item  */
+    .foodlist-card .card-body h3{
+        font-size: 10px;
+    }
+    .foodlist-card .card-body h3 span{
+        font-size: 10px;
+        top: 30%
+    }
+    .foodlist-card .card-body p{
+        font-size: 6px;
+    }
+    .foodlist-price span{
+        font-size:10px;
+        line-height:20px;
+    }
+    .foodlist-price .btn-add-cart{
+        font-size:10px;
+        padding:2px 5px;
+    }
+    .card-img-wrap img{
+        height:150px;
+    }
+}
+

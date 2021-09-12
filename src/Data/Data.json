@@ -1,0 +1,98 @@
+[
+    {
+       "id": 1,
+       "title": "buttermilk pancakes",
+       "category": "starter",
+       "price": 3.99,
+       "img": "./img/1.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 2,
+       "title": "diner double",
+       "category": "seafood",
+       "price": 5.99,
+       "img": "./img/2.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 3,
+       "title": "godzilla milkshake",
+       "category": "starter",
+       "price": 5.99,
+       "img": "./img/3.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 4,
+       "title": "country delight",
+       "category": "starter",
+       "price": 3.99,
+       "img": "./img/4.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 5,
+       "title": "egg attack",
+       "category": "seafood",
+       "price": 5.99,
+       "img": "./img/5.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 6,
+       "title": "oreo dream",
+       "category": "dessert",
+       "price": 5.99,
+       "img": "./img/6.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 7,
+       "title": "bacon overflow",
+       "category": "starter",
+       "price": 3.99,
+       "img": "./img/7.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 8,
+       "title": "american classic",
+       "category": "dessert",
+       "price": 8.99,
+       "img": "./img/8.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 9,
+       "title": "quarantine buddy",
+       "category": "dessert",
+       "price": 5.99,
+       "img": "./img/9.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 10,
+       "title": "quarantine buddy",
+       "category": "drinks",
+       "price": 1.99,
+       "img": "./img/10.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 11,
+       "title": "quarantine buddy",
+       "category": "drinks",
+       "price": 1.99,
+       "img": "./img/11.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    },
+    {
+       "id": 12,
+       "title": "quarantine buddy",
+       "category": "drinks",
+       "price": 1.99,
+       "img": "./img/12.jpg",
+       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, itaque dolores totam doloribus earum rem ex ipsa sapiente illum saepe consequatur pariatur optio? Exercitationem magni obcaecati tempore distinctio id beatae qui delectus illum tempora eius quo optio minima, minus quae?"
+    }
+  ]

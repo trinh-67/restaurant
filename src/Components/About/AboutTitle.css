@@ -1,0 +1,136 @@
+.about-title{
+    position: relative;
+}
+.about-title h4 {
+    color: #C19D60;
+    font-size: 16px;
+    font-weight: 400;
+}
+.about-title p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+}
+.about-title-btn{
+    background: #C19D60;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px 20px;   
+}
+.about-title{
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.cube, .wave{
+    position: absolute;
+    width: auto;
+}
+.cube{
+  top: -50px;
+  left: 38%;
+}
+.wave{
+    bottom: 35%;
+    left: -150px;
+}
+@media only screen and (min-width: 1200px) {
+    
+}
+@media only screen and (max-width: 1200px) {
+    .cube{
+        top: -50px;
+        left: 34%;
+    }
+    .wave{
+        left: -15%;
+    }
+}
+@media only screen and (max-width: 992px) {
+  .cube{
+      top: -30px;
+      left: 30%;
+  }
+  .wave{
+      left: -18%;
+  }
+  .about-title h2 {
+    font-size: 22px;
+}
+.about-title p{
+    font-size: 14px;
+    font-weight: 400;
+}
+}
+@media only screen and (max-width: 768px) {
+    .cube{
+        top: -40px;
+        left: 60%;
+      }
+      .wave{
+          left: -20%;
+      }
+}
+@media only screen and (max-width: 600px) {
+   .about-carousel{
+       margin-top: 50px;
+   }
+   .about-title h4 {
+    font-size: 12px;
+}
+.about-title p{
+    font-size: 10px;
+    font-weight: 400;
+}
+  .wave{
+      left: -22%;
+      top: 40%;
+  }
+  .cube{
+    top: -40px;
+    left: 55%;
+  }
+}
+@media only screen and (max-width: 400px) {
+   .about-carousel{
+       margin-top: 30px;
+   }
+   .about-title{
+       padding-bottom: 60px;
+   }
+   .about-title h4 {
+    font-size: 8px;
+}
+.about-title h2 {
+    font-size:10px;
+}
+
+.about-title p{
+    font-size: 6px;
+    font-weight: 400;
+}
+.about-title-btn{
+    font-size:6px;
+    padding: 3px 8px;
+}
+  .wave{
+      left: -35%;
+      top: 45%;
+  }
+  ul.slides{
+      height:180px;
+  }
+  .carousel-wrap:before{
+      bottom:-30px;
+      height:30px;
+  }
+  .carousel-dots .carousel-dot {
+    width:5px;
+    height:5px;    
+  }
+  .cube{
+    top: -40px;
+    left: 45%;
+  }
+}

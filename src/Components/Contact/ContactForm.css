@@ -1,0 +1,135 @@
+.contact-input{
+    width: 100%;
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+    border: transparent;
+    color: #C19D60;
+    font-weight: bold;
+    outline: none;
+    margin-bottom: 15px;
+}
+.contact-textarea{
+    background: rgba(255,255,255,0.1);
+    width: 100%;
+    outline: none;
+    padding: 10px 20px;
+    color: #C19D60;
+    border: transparent;
+}
+
+.btn-send-message{
+    width: 180px;
+    font-size: 14px;
+    font-weight: 400;
+    background: #C19D60;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in;
+}
+.btn-send-message:hover{
+    box-shadow: 2px 2px 10px #fff;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .contact h3{
+        font-size:18px;
+    }   
+    .contact p{
+        font-size: 14px;
+    }
+    .contact-input{
+        font-size:16px;
+        padding: 5px 10px;
+        margin-bottom: 8px;
+    }
+    .contact-textarea{
+        font-size:16px;
+        padding: 5px 10px;
+    }
+    .btn-send-message{
+        width:160px;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .contact h3{
+        font-size:16px;
+    }   
+    .contact-input{
+        font-size:16px;
+        padding: 5px 10px;
+        margin-bottom: 8px;
+    }
+    .contact-textarea{
+        font-size:14px;
+        padding: 5px 10px;
+    }
+    .btn-send-message{
+        width:140px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .contact h3{
+        font-size:14px;
+    }   
+    .contact p{
+        font-size: 12px;
+    }
+    .contact-input{
+        font-size:14px;
+        padding: 4px 10px;
+        margin-bottom: 8px;
+    }
+    .contact-textarea{
+        font-size:12px;
+        padding: 4px 10px;
+    }
+    .btn-send-message{
+        width:120px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .contact h3{
+        font-size:12px;
+    }   
+    .contact p{
+        font-size: 10px;
+    }
+    .contact-input{
+        font-size:12px;
+        padding: 3px 10px;
+    }
+    .contact-textarea{
+        font-size:10px;
+        padding: 2px 10px;
+    }
+    .btn-send-message{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .contact h3{
+        font-size:10px;
+    }   
+    .contact p{
+        font-size: 8px;
+    }
+    .contact-input{
+        font-size:10px;
+        padding: 2px 10px;
+        margin-bottom: 5px;
+    }
+    .contact-textarea{
+        font-size:10px;
+        padding: 2px 10px;
+    }
+    .btn-send-message{
+        width:100px;
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,339 @@
+.activeCSS{
+    color: #C19D60;
+}
+.header{
+    position: absolute;
+    z-index: 10;
+}
+.container{
+    max-width: 90%;
+}
+/* Top */
+.header-contact{
+    transition: all .5s ease-in-out;
+    font-weight: bolder;
+}
+.header-contact span{
+    color: #C19D60;
+    font-weight: bold;
+}
+.header-contact:hover{
+    color: #C19D60;
+}
+.header-contact:hover span {
+    color: #fff;
+}
+/* Inner */
+.header-container{
+    background: #292929;
+}
+.logo img {
+    width: auto;
+    height: 25px;
+    margin-left: 25px;
+}
+.navbar-nav .nav-item{
+    padding: 4px;
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.navbar-nav .nav-link:hover{
+    color: #C19D60 !important;
+}
+.show-cart, .show-reservation{
+    /* cursor: pointer; */
+    line-height: 65px;
+    border-left: 1px solid  rgba(255,255,255,0.5);
+    text-align: center;
+}
+.show-cart{
+    position: relative;
+    font-size: 22px;
+    width: 70px;
+    height: 65px;
+    margin-left: 24px;
+}
+.btn-show-reservation{
+    font-size: 15px;
+    position: relative;
+}
+.btn-show-reservation span{
+    position: relative;
+    z-index: 1;
+}
+.btn-show-reservation:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: -1px;
+    /* z-index: 1; */
+    height: 10%;
+    transition: all .2s ease-in-out;
+}
+.btn-show-reservation:hover:before{
+    height: 100%;
+    background: #C19D60;
+}
+
+.show-cart .btn-show-cart,
+.show-reservation .btn-show-reservation{
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+/* Drop menu  */
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    position: absolute;
+    min-width: 130px;
+    left: -30px;
+    text-align: center;   
+    margin: -8px 0px;
+    padding: 30px 0 10px 0;
+    background: #292929;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0;
+}
+.navbar .nav-item:hover .dropdown-menu{
+    display: block;
+    /* z-index: 2; */
+}
+.dropdown-menu .dropdown-item{
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 0;
+    /* padding: 10px 0 5px 15px; */
+    display: block;
+}
+.dropdown-menu .dropdown-item.active{
+    background: none;
+    color: #C19D60;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #C19D60;
+    background: none;
+}
+.nav-item .dropdown-toggle::after{
+    vertical-align: 3px;
+    transition: 0.5s linear;
+}
+.nav-item .dropdown-toggle:hover:after{
+    transform: rotateX(180deg);
+}
+.navbar-toggler{
+    margin-left: auto;
+}
+.navbar-toggler:focus{
+    box-shadow: 0px 0px 8px 0px #C19D60;
+}
+.navbar-toggler-icon{
+    color: #fff;
+    line-height: 30px;
+}
+/* .navbar-collapse{
+    position: relative;
+    flex-basis: 1;
+    flex-grow: 1;
+} */
+.navbar-toggler:focus .navbar-nav{
+    opacity: 1;
+    right: 0;
+    visibility: visible;
+}
+.btn-show-cart{
+    position: relative;
+}
+.number-item{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 10px;
+    border-radius: 50%;
+    background: #C19D60;
+}
+/* Reponsive */
+@media only screen and (min-width: 1200px) {
+    .header-top_contact{
+        font-size: 14px;
+    }
+    .show-cart:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 20px;
+        top: 50%;
+        left: -35px;
+        background: rgba(255,255,255,0.50);
+        margin-top: -8px;
+        transform: rotate(45deg);
+    }
+   
+    .navbar-collapse{
+        margin-left: 200px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .header-top_contact{
+        font-size: 14px;
+    }
+    .show-cart:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 20px;
+        top: 50%;
+        left: -44px;
+        background: rgba(255,255,255,0.50);
+        margin-top: -8px;
+        transform: rotate(45deg);
+    }
+    .navbar-nav .nav-item{
+        padding: 2px;
+        margin-right: 20px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .header-top_contact{
+        font-size: 12px;
+    }
+    .header-container{
+        justify-content: center !important;
+    }
+    .navbar-collapse .navbar-nav{
+        background: #292929;
+        align-items: center;
+        padding: 10px 25px;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu{
+        position: absolute;
+        top: -65px;
+        left: 100px;
+        font-size: 14px;
+    }
+    .nav-item .dropdown-toggle:hover::after{
+        transform: rotate(-90deg);
+        margin-left: 15px;
+    }
+    .show-cart:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 20px;
+        top: 50%;
+        left: -100px;
+        background: rgba(255,255,255,0.50);
+        margin-top: -8px;
+        transform: rotate(45deg);
+    }
+    .narbav-right .btn-show-reservation{
+        border-right: 1px solid rgba(255,255,255,0.5);
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header-top_contact{
+        font-size: 10px;
+    }
+   
+}
+@media only screen and (max-width: 600px) {
+    .header-top_contact{
+        font-size:8px;
+    }
+    .logo img{
+        height:12px;
+    }
+    .navbar-toggler{
+        width:40px;
+        height: 40px;
+        padding:5px;
+        margin-right: 10px;
+    }
+    .navbar-toggler-icon{
+        font-size:12px;
+        line-height:16px;
+    }
+    .show-cart{
+        font-size:10px;
+        width:40px;
+    }
+    .show-cart:before{
+        left:-60%;
+    }
+    .show-cart{
+        height:40px !important;
+    }
+    .show-cart, .show-reservation{
+        line-height:20px;
+    }
+    .number-item{
+        width:10px;
+        height:10px;
+        line-height:10px;
+        font-size: 10px;
+    }
+    .show-cart .btn-show-cart, .show-reservation .btn-show-reservation{
+        font-size:10px;
+        height:40px !important;
+    }
+    .navbar-nav .nav-item .nav-link ,.dropdown-menu .dropdown-item{
+        font-size:8px;
+        padding:2px;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu{
+        top: -55px;
+        left: 65px;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .header-top_contact{
+        font-size:6px;
+    }
+    .logo img{
+        height:10px;
+    }
+    .navbar-toggler{
+        width:30px;
+        height: 30px;
+        padding:5px;
+        margin-right: 10px;
+    }
+    .navbar-toggler-icon{
+        font-size:10px;
+        line-height:10px;
+    }
+    .show-cart{
+        font-size:8px;
+        width:20px;
+        height:20px;
+    }
+    .show-cart:before{
+        left:-100%;
+    }
+    .number-item{
+        width:8px;
+        height:8px;
+        line-height:8px;
+        font-size: 8px;
+    }
+    .show-cart .btn-show-cart, .show-reservation .btn-show-reservation{
+        font-size:8px;
+    }
+    .navbar-nav .nav-item .nav-link ,.dropdown-menu .dropdown-item{
+        font-size:6px;
+        padding:1px;
+    }
+}

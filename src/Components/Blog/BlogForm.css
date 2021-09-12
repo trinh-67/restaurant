@@ -1,0 +1,85 @@
+.blog-form{
+    border-top: 1px dashed rgba(255,255,255,0.08);
+}
+.blog-form input,.blog-form textarea{
+    width: 100%;
+    background: #303030;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.08);
+    outline: none;
+    padding: 10px 20px;
+}
+.add-comment-btn{
+    background: #C19D60;
+    color: #fff;
+    padding: 10px 30px;
+    border:none;
+    border: 1px solid rgba(255,255,255,0.08)    ;
+}
+
+@media only screen and (max-width: 1200px) {
+    .blog-form h4{
+        font-size: 22px;
+    }
+    .blog-form input, .blog-form textarea{
+        font-size:16px;
+        padding:10px 15px;
+    }
+    .add-comment-btn{
+        font-size:16px;
+        padding: 10px 15px;
+        font-size:16px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .blog-form h4{
+        font-size: 18px;
+    }
+    .blog-form input, .blog-form textarea{
+        font-size:14px;
+        padding:7px 15px;
+    }
+    .add-comment-btn{
+        font-size:14px;
+        padding: 7px 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .blog-form h4{
+        font-size: 14px;
+    }
+    .blog-form input, .blog-form textarea{
+        font-size:10px;
+        padding:5px 10px;
+    }
+    .add-comment-btn{
+        font-size:10px;
+        padding: 5px 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .blog-form h4{
+        font-size: 14px;
+    }
+    .blog-form input, .blog-form textarea{
+        font-size:8px;
+        padding:4px 8px;
+    }
+    .add-comment-btn{
+        font-size:8px;
+        padding: 4px 8px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .blog-form h4{
+        font-size: 12px;
+    }
+    .blog-form input, .blog-form textarea{
+        font-size:6px;
+        padding:3px 8px;
+    }
+    .add-comment-btn{
+        font-size:6px;
+        padding: 3px 8px;
+    }
+}

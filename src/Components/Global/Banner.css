@@ -1,0 +1,220 @@
+
+.banner .banner-overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: #000;
+    opacity: 0.5;
+    /* z-index: 1; */
+}
+
+/* bg  */
+.banner-bg{
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+/* content */
+
+.banner-title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .content{
+    z-index: 1;  
+}
+.banner .banner-title p{
+    color: #C19D60;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+.banner .banner-title h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dots-separator span:after{
+    content: '\25CF\25CF\25CF\25CF\25CF\25CF';  
+    font-size: 12px;
+    color: #C19D60;
+}
+.content {
+    margin-top: 160px;
+}
+.section-scroll{
+    position: absolute;
+    /* width: 20px; */
+    /* height: 30px; */
+    /* z-index: 20; */
+    bottom: -30%;
+    left: 50%;
+    margin-left: -10px;
+} 
+.mousey {
+    width: 20px;
+    height: 30px;
+    border-radius: 6px;
+    padding: 0 6px;
+    border: 2px solid #fff;
+    position: relative;
+    /* z-index: 5; */
+}
+.scroller {
+    position: relative;
+    left: 50%;
+    top: 6px;
+    margin-left: -2px;
+    width: 4px;
+    height: 4px;
+    background: #C19D60;
+    border-radius: 4px;
+    animation: scroll 2s cubic-bezier(.15,.40,.70,.9) infinite;
+}
+@keyframes scroll {
+    0%{transform: translateY(0); opacity: 1;}
+    100%{transform: translateY(10px); opacity: 0;}
+}
+
+/* Responsive */
+@media only screen and (min-width: 1200px) {
+    .banner .bg-banner{
+        height: 600px;
+    }
+    .banner .banner-title p{
+        color: #C19D60;
+        font-size: 18px;
+        font-weight: lighter;
+        margin-bottom: 0;
+    }
+    .banner .banner-title h2{
+        color: #fff;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    .dots-separator span:after{
+        content: '\25CF\25CF\25CF\25CF\25CF\25CF';  
+        font-size: 12px;
+        color: #C19D60;
+    }
+    .content {
+        margin-top: 200px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .banner-bg{
+        height: 500px;
+    }
+    .banner .banner-overlay{
+        height: 100%;
+    }
+    .banner .banner-title p{
+        color: #C19D60;
+        font-size: 18px;
+        font-weight: lighter;
+        margin-bottom: 0;
+    }
+    .banner .banner-title h2{
+        color: #fff;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    .dots-separator span:after{
+        content: '\25CF\25CF\25CF\25CF\25CF\25CF';  
+        font-size: 12px;
+        color: #C19D60;
+    }
+    .content {
+        margin-top: 200px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .banner-bg{
+        height: 450px;
+    }
+    .banner .banner-overlay{
+        height: 85%;
+    }
+    .banner .banner-title p{
+        color: #C19D60;
+        font-size: 16px;
+        font-weight: lighter;
+        margin-bottom: 0;
+    }
+    .banner .banner-title h2{
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .dots-separator span:after{
+        content: '\25CF\25CF\25CF\25CF\25CF\25CF';  
+        font-size: 12px;
+        color: #C19D60;
+    }
+    .content {
+        margin-top: 160px;
+    }
+    .banner-bg{
+        height: 400px;
+    }
+    .banner .banner-title p{
+        font-size: 16px;
+    }
+    .banner .banner-title h2{
+        font-size: 26px;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .dots-separator span:after{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .banner-bg{
+        height: 300px;
+    }
+    .banner .banner-overlay{
+        height: 80%;
+    }
+    .banner .banner-title p{
+        font-size: 12px;
+    }
+    .banner .banner-title h2{
+        font-size: 16px;
+    }
+    .content {
+        margin-top: 120px;
+    }
+    .dots-separator span:after{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .banner .banner-title p{
+        font-size: 8px;
+    }
+    .banner .banner-title h2{
+        font-size: 10px;
+    }
+    .content {
+        margin-top: 120px;
+    }
+    .dots-separator span:after{
+        font-size: 6px;
+    }
+    .section-scroll{
+        bottom:-20%;
+    }
+    .mousey{
+        width:10px;
+        height:22px;
+    }
+}

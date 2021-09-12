@@ -1,0 +1,225 @@
+
+.modal-dialog{
+    max-width: 700px;
+    top: 5%;
+    box-shadow: 0px 0px 0px 30px #212121;
+}
+.modal-content{
+    width: 100%;
+    height: 550px;
+    background-size: contain !important;
+    background: #292929;
+    border-color: rgba(255,255,255,0.08);
+    position: relative;
+}
+.modal-reservation-title h4{
+    color: #C19D60;
+}
+.modal-reservation-title h2{
+    color: #fff;
+    font-weight: bold;
+}
+.reservation-input{
+    width: 92%;
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+    border: transparent;
+    color: #C19D60;
+    font-weight: bold;
+    outline: none;
+    margin-bottom: 8px;
+}
+.erro-message{
+    font-size: 12px;
+}
+.reservation-textarea{
+    background: rgba(255,255,255,0.1);
+    width: 96%;
+    outline: none;
+    padding: 10px 20px;
+    color: #C19D60;
+    border: transparent;
+}
+.close-reservation-modal{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    color: #C19D60;
+    width: 40px;
+    height: 40px;
+    background: #303030;
+    border-color: rgba(255,255,255,0.08);
+}
+.close-reservation-modal:hover{
+    background: #292929;
+    color: #000;
+
+}
+.btn-reserve{
+    width: 180px;
+    font-size: 14px;
+    font-weight: 400;
+    background: #C19D60;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in;
+}
+.btn-reserve:hover{
+    box-shadow: 2px 2px 10px #fff;
+}
+.swal2-title{
+    color: #C19D60 !important;
+    font-size: 20px !important;
+}
+.swal2-content{
+    text-align: left !important;
+    color: #fff !important;
+}
+.swal2-popup{
+    background: #292929 !important;
+}
+.swal2-confirm {
+    background: #C19D60 !important;
+    color: #fff !important;
+}
+
+@media only screen and (max-width: 1200px) {
+   
+}
+@media only screen and (max-width: 992px) {
+    .modal-content{
+        height: 600px;
+        width:100%;
+        margin: 0 auto;;
+    }
+    .reservation-textarea{
+        font-size:16px;
+        padding: 10px 15px;
+        width:96%;
+    }
+    .modal-reservation-title h4{
+        font-size:16px;
+    }
+    .modal-reservation-title h2{
+        font-size:18px
+    }
+    .reservation-input{
+        font-size:16px;
+        padding: 10px 15px;
+    }
+    .btn-reserve{
+        width: 40%;
+        font-size:16px;
+        padding: 10px 15px;
+    }
+    .close-reservation-modal{
+        font-size:14px;
+        width:35px;
+        height: 35px;
+        top:-17px;
+        right: -17px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .modal-content{
+        height: 550px;
+        width:95%;
+    }
+    .reservation-textarea{
+        font-size:14px;
+        padding: 10px 15px;
+        width:96%;
+    }
+    .modal-reservation-title h4{
+        font-size:14px;
+    }
+    .modal-reservation-title h2{
+        font-size:16px
+    }
+    .reservation-input{
+        font-size:14px;
+        padding: 10px 15px;
+    }
+    .btn-reserve{
+        width: 40%;
+        font-size:14px;
+        padding: 10px 15px;
+    }
+    .close-reservation-modal{
+        font-size:12px;
+        width:30px;
+        height: 30px;
+        top:-15px;
+        right: -15px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .modal-content{
+        height: 500px;
+        width:85%;
+    }
+    .reservation-textarea{
+        font-size:10px;
+        padding: 4px 5px;
+        width:92%;
+    }
+    .modal-reservation-title h4{
+        font-size:12px;
+    }
+    .modal-reservation-title h2{
+        font-size:14px
+    }
+    .reservation-input{
+        font-size:10px;
+        padding: 4px 5px;
+    }
+    .btn-reserve{
+        width: 35%;
+        font-size:10px;
+        padding:4px 5px;
+    }
+    .close-reservation-modal{
+        font-size:10px;
+        width:25px;
+        height: 25px;
+        top:-12px;
+        right: -12px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .modal-content{
+        height: 450px;
+        width:80%;
+    }
+    .reservation-textarea{
+        font-size:8px;
+        padding: 3px 5px;
+    }
+    .modal-reservation-title h4{
+        font-size:10px;
+    }
+    .modal-reservation-title h2{
+        font-size:12px
+    }
+    .reservation-input{
+        font-size:8px;
+        padding: 3px 5px;
+    }
+    .btn-reserve{
+        width: 30%;
+        font-size:8px;
+        padding:3px 5px;
+    }
+    .close-reservation-modal{
+        font-size:8px;
+        width:20px;
+        height: 20px;
+        top:-10px;
+        right: -10px;
+    }
+}

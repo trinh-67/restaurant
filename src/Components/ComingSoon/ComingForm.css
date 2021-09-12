@@ -1,0 +1,271 @@
+.comingsoon-form{
+    background: #212121;
+}
+.comingsoon-container{
+    height: 625px;
+    background-position: center -130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comingsoon-container:before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    border: 1px dashed rgba(255,255,255,0.2);
+    z-index: 2;
+    box-shadow: 0px 0px 0px 50px rgb(255 255 255 / 3%);
+    z-index: 1;
+}
+.coming-content{
+    padding: 0 80px;
+    position: absolute;
+    top: 15%;
+    z-index: 2;
+}
+.coming-content p{
+    color: #c19d60;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.coming-content h2{
+    font-size: 26px;
+    font-size: bold;
+    position: relative;
+}
+.coming-content h2:after{
+    position: absolute;
+    content: '\25CF\25CF\25CF';
+    width: 50px;
+    color: #c19d60;
+    left: 50%;
+    bottom: -20px;
+    margin-left: -23px;
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+.coming-subcribe-form span{
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 50px;
+}
+.coming-subcribe-form input{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    color: #fff;
+    padding: 10px 20px;
+    width: 73%;
+}
+.coming-subcribe-form input:hover{
+    box-shadow: 0 0 2px #fff;
+}
+.coming-subcribe-form .subscribe-btn{
+    background: #c19d60;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin-left: 2%;
+    width: 25%;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+}
+.coming-subcribe-form .subscribe-btn:hover{
+    color: #c19d60;
+    background: #fff;
+}
+.coming-content .contact-date{
+    margin: 0;
+    width: 99%;
+}
+/* Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .coming-content .contact-date{
+        margin: 0;
+        width: 99%;
+    }
+    .coming-countdown-content .countdown-item p{
+        font-size: 30px;
+    }
+    .coming-countdown-content .countdown-item h2{
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .coming-countdown-content .countdown-item p{
+        font-size: 28px;
+    }
+    .coming-countdown-content .countdown-item h2{
+        font-size: 24px;
+    }
+    .coming-subcribe-form span{
+        font-size:16px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .comingsoon-container{
+        height: 500px;
+        background-position: 0px 65%;
+    }
+    .coming-content p{
+        font-size:14px;
+        margin: 10px 0 !important;
+        padding-bottom:0;
+    }
+    .coming-content h2{
+        font-size:16px;
+    }
+    .coming-content .contact-date,.coming-content .contact-time{
+        font-size:12px !important;
+    }
+    .comingsoon-container:before{
+        left:25px;
+        right:25px;
+        box-shadow:0px 0px 0px 25px rgb(255 255 255 / 3%);
+    }
+    .contact-working-time:before{
+        height:65px !important;
+        top: 10% !important ;
+    }
+    .coming-subcribe-form .contact-number{
+        font-size:14px;
+        width:90%;
+        margin: auto;
+    }
+    .bold-separator{
+        margin: 20px 0 !important ;
+    }
+    .coming-countdown-content .countdown-item p{
+        font-size: 22px;
+    }
+    .coming-countdown-content .countdown-item h2{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .comingsoon-container{
+        height: 400px;
+        background-position: 0px 50%;
+    }
+    .coming-content img{
+        width:50px;
+        height:15px;
+    }
+    .coming-content p{
+        font-size:10px;
+        margin: 10px 0 !important;
+        padding-bottom:0;
+    }
+    .coming-content h2{
+        font-size:12px;
+    }
+    .coming-subcribe-form span{
+        font-size:10px;
+        margin-top: 20px;
+    }
+    .coming-subcribe-form input{
+        padding: 4px 8px;
+        font-size:10px;
+    }
+    .coming-subcribe-form .subscribe-btn{
+        padding:4px 8px;
+        font-size:10px;
+    }
+    .coming-content .contact-date,.coming-content .contact-time{
+        font-size:10px !important;
+    }
+    .coming-subcribe-form .contact-number{
+        font-size:12px;
+        width:85%;
+        margin: auto;
+    }
+    .bold-separator{
+        margin: 15px 0 !important ;
+    }
+    .coming-countdown-content .countdown-item p{
+        font-size: 18px;
+    }
+    .coming-countdown-content .countdown-item h2{
+        font-size: 14px;
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    .comingsoon-container{
+        height: 350px;
+    }
+    .coming-content{
+        padding: 0 55px;
+    }
+    .coming-content img{
+        height:10px;
+    }
+    .coming-content p{
+        font-size:8px;
+    }
+    .coming-content h2{
+        font-size:10px;
+    }
+    
+    .coming-content h2:after{
+        font-size:6px;
+        margin-left: -23px;
+    }
+    
+    .coming-countdown .table-reservation{
+        top:10%;
+        right: 10%;
+        font-size: 10px;
+
+    }
+    .coming-countdown-content .countdown-item p{
+        font-size:16px;
+    }
+    .coming-countdown-content .countdown-item h2{
+        font-size:6px;
+    }
+    .coming-subcribe-form input{
+        padding: 3px 8px;
+        font-size:8px;
+    }
+    .coming-subcribe-form .subscribe-btn{
+        padding:3px 8px;
+        font-size:8px;
+    }
+    .coming-subcribe-form span{
+        font-size:8px;
+    }
+    .coming-content .contact-date,.coming-content .contact-time{
+        font-size:6px !important;
+    }
+    .contact-number a{
+        font-size:6px;
+    }
+    .comingsoon-container:before{
+        left:25px;
+        right:25px;
+        box-shadow:0px 0px 0px 25px rgb(255 255 255 / 3%);
+    }
+    .contact-working-time:before{
+        height:55px !important;
+    }
+    .coming-subcribe-form .contact-number{
+        font-size:10px;
+        width:80%;
+        margin: auto;
+    }
+    .bold-separator{
+        margin: 10px 0 !important ;
+    }
+}

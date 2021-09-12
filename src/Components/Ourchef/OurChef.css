@@ -1,0 +1,225 @@
+.chef-title h4{
+    color: #C19D60;
+    font-size: 16px;
+    font-weight: 400;
+}
+.chef-title h2{
+    color: #fff;
+    font-size: 30px;
+}
+.chef .team-box,.chef-footer{
+    box-shadow: 0px 0px 2px rgba(255,255,255,0.8);
+}
+.chef .team-photo{
+    position: relative;
+    overflow: hidden;
+}
+.chef .team-photo:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+    border-left: 1px dotted;
+    border-top: 1px dotted;
+    color: #C19D60;
+}
+.team-photo:after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    bottom: 20px;
+    right: 20px;
+    border-right: 1px dotted;
+    border-bottom: 1px dotted;
+    color: #C19D60;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    z-index: 3;
+}
+.chef .team-photo .overlay{
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+.chef .team-social{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    height: 40px;
+    left: 20px;
+    right: 20px;
+    opacity: 0;
+    line-height: 40px;
+    margin-top: -20px;
+    z-index: 5;
+    transition: all .3s ease-in-out;
+    padding: 0 10px;
+}
+.no-list-style{
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    margin-top: 30px;
+}
+.team-social{
+    text-align: center;
+}
+.team-social .ts_title{
+    color: #fff;
+    font-size: 20px;
+}
+.team-social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 5px  ;
+}
+.team-social li a {
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border-radius: 100%;
+}
+.team-social li a:hover{
+    background: #C19D60;
+}
+.team-photo:hover .overlay{
+    opacity: 0.5;
+}
+.team-photo:hover .team-social {
+    opacity: 1;
+}
+/* Chef Info  */
+.chef .team-info{
+    text-align: center;
+    padding: 15px;
+    background: #303030;
+    color: #fff;
+    position: relative;
+}
+.chef .team-info h3{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.chef .team-info h4{
+    color: #C19D60;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.chef .team-info p{
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    padding: 5px;
+}
+.chef .team-info:after {
+    position: absolute;
+    content: '\25CF\25CF\25CF';
+    width: 50px;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -25px;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #C19D60;
+}
+.chef-footer{
+    background: #303030;
+    margin-top: 50px;
+    padding: 20px;
+    
+}
+.chef-footer h4{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.chef-footer .chef-blog-btn{
+    background: #C19D60;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin: 10px 0;
+    transition: 0.5s ease-in-out;
+}
+.chef-footer .chef-blog-btn:hover{
+    color: #000;
+}
+
+/* Responsive  */
+
+@media only screen and (min-width: 1200px) {
+    
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+    .chef .team-info h3{
+        font-size: 16px;
+    }.chef .team-info h4{
+        font-size: 12px;
+    }
+    .chef .team-info p{
+        font-size: 8px;
+    }
+    .chef-footer h4{
+        font-size: 14px;
+    }
+    .chef-footer .chef-blog-btn{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 600px) {
+    .col-margin{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .chef-title h4 {
+        font-size:8px;
+    }
+    .chef-title h2 {
+        font-size:12px;
+    }
+    .chef .team-info h3{
+        font-size:12px;
+    }
+    .chef .team-info h4{
+        font-size:6px;
+    }
+    .chef .team-info p {
+        font-size:6px;
+    }
+    .chef .team-info:after{
+        font-size:6px;
+    }
+    .chef-footer h4{
+        font-size:8px;
+        margin-bottom: 10px;
+    }
+    .chef-footer .chef-blog-btn{
+        font-size:6px;
+        padding: 3px 8px;
+    }
+    .chef .team-photo:before,.chef .team-photo:after{
+        width:25px;height:25px;
+    }
+}
